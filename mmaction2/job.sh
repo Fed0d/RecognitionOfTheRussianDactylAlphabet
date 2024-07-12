@@ -1,0 +1,3 @@
+#python tools/train.py configs/recognition/swin/swin-tiny-p244-w877_in1k-pre_8xb8-amp-32x2x1-30e_kinetics400-rgb.py --work-dir /results/dmitriy_samorodov/train_swin2
+python tools/test.py /results/dmitriy_samorodov/train_swin2/20240416_214105/vis_data/config.py /results/dmitriy_samorodov/train_swin2/best_acc_top1_epoch_78.pth --work-dir /results/dmitriy_samorodov/test_swin2
+#bash tools/dist_train.sh configs/recognition/swin/swin-tiny-p244-w877_in1k-pre_8xb8-amp-32x2x1-30e_kinetics400-rgb.py 2 --work-dir /results/dmitriy_samorodov/train_swin2
